@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GroupExcersice</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="sidenav d-flex gap-4 m-2 nav-underline">
+        <a onclick="openSection(0)" href="#" class="nav-item nav-link fw-bold fs-3 text-light">Home</a>
+        <a onclick="openSection(1)" href="#" class="nav-item nav-link fw-bold fs-3 text-light">Group diary</a>
+        <a onclick="openSection(2)" href="#" class="nav-item nav-link fw-bold fs-3 text-light">Project</a>
+        <a onclick="openSection(3)" href="#" class="nav-item nav-link fw-bold fs-3 text-light">Result</a>
+        <a onclick="openSection(4)" href="#" class="nav-item nav-link fw-bold fs-3 text-light">Style guide</a>
+      </div>
+      <div class="">
+        <button type="button" onclick="sendRedirect()" class=" me-4 nav-item nav-link fw-bold fs-3 text-light">
+          Project
+        </button>
+      </div>
+    </div>
+    <div id="welcome" class="section absolute-center">
+      <div class="introduce absolute-center">
+        <h2>Welcome to group 6</h2>
+      </div>
+    </div>
+
+    <section id="group-diary d-flex align-item-center justify-content-center" class="section">
+      <h1 class="m-2">Group diary</h1>
+      <div class="flex-row">
+        <button class="btn-week fs-4 fw-bold" onclick="openWeek(0)">
+          week 1
+        </button>
+        <button class="btn-week fs-4 fw-bold" onclick="openWeek(1)">
+          week 2
+        </button>
+        <button class="btn-week fs-4 fw-bold" onclick="openWeek(2)">
+          week 3
+        </button>
+        <button class="btn-week fs-4 fw-bold" onclick="openWeek(3)">
+          week 4
+        </button>
+      </div>
+      <div class="tab-week">
+        <table class="sub">
+          <table class="table table-striped-columns">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">MÃ SV</th>
+                <th scope="col">họ và tên</th>
+                <th scope="col">công việc được giao</th>
+                <th scope="col">kết quả</th>
+                <th scope="col">tiến độ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>22130015</td>
+                <td>Trần Nhựt Anh</td>
+                <td>Xây dựng web project</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>22130207</td>
+                <td>Phan Văn Phát</td>
+                <td>Xây dựng web nhóm</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>22130238</td>
+                <td>đỗ văn minh tài</td>
+                <td>Login register forgot password</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>22130012</td>
+                <td>nguyễn hoàng Anh</td>
+                <td>Xây dựng trang contact , about</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>21130365</td>
+                <td>đỗ quốc hưng</td>
+                <td>Login register forgot</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </table>
+      </div>
+      <div class="tab-week">
+        <table class="sub">
+          <table class="table table-striped-columns">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">MÃ SV</th>
+                <th scope="col">họ và tên</th>
+                <th scope="col">công việc được giao</th>
+                <th scope="col">kết quả</th>
+                <th scope="col">tiến độ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>22130015</td>
+                <td>Trần Nhựt Anh</td>
+                <td>Xây dựng Home page</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>22130207</td>
+                <td>Phan Văn Phát</td>
+                <td>Xây dựng blog page</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>22130238</td>
+                <td>đỗ văn minh tài</td>
+                <td>Xây dựng menu page</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>22130012</td>
+                <td>nguyễn hoàng Anh</td>
+                <td>Xây dựng trang contact</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>21130365</td>
+                <td>đỗ quốc hưng</td>
+                <td>Xây dựng trang about</td>
+                <td>Hoàn thành</td>
+                <td>100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </table>
+      </div>
+      <div class="tab-week">Week 3</div>
+      <div class="tab-week">Week 4</div>
+    </section>
+    <!-- Start Project -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="tabs">
+        <button class="tab-btn fs-4 fw-bold" type="button" onclick="openTab(0)">
+          Requirement
+        </button>
+        <button class="tab-btn fs-4 fw-bold" type="button" onclick="openTab(1)">
+          Design
+        </button>
+        <button class="tab-btn fs-4 fw-bold" type="button" onclick="openTab(2)">
+          Implementation
+        </button>
+      </div>
+
+      <!-- Tab Contents -->
+      <div id="requirement" class="tab-content">
+        <table class="table table-striped-columns">
+          <thead class="table-primary">
+            <tr>
+              <th scope="col">STT</th>
+              <th scope="col">Chức năng</th>
+              <th scope="col">Người đề xuất</th>
+              <th scope="col">Người thiết kế</th>
+              <th scope="col">Người thực hiện</th>
+              <th scope="col">Thời gian dự kiến</th>
+              <th scope="col">Trạng thái</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Xây dựng web project</td>
+              <td>Trần Nhựt Anh</td>
+              <td>Phan Văn Phát</td>
+              <td>Trần Nhựt Anh</td>
+              <td>11/11/2024 đến 16/11/2024</td>
+              <td>Hoàn thành</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Xây dựng web nhóm</td>
+              <td>Phan Văn Phát</td>
+              <td>Phan văn phát</td>
+              <td>Phan văn phát</td>
+              <td>11/11/2024 đến 16/11/2024</td>
+              <td>Hoàn thành</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Login register</td>
+              <td>đỗ văn minh tài</td>
+              <td>đỗ văn minh tài</td>
+              <td>đỗ văn minh tài</td>
+              <td>11/11/2024 đến 16/11/2024</td>
+              <td>Hoàn thành</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Xây dựng trang About , Contact</td>
+              <td>nguyễn hoàng Anh</td>
+              <td>Phan văn phát</td>
+              <td>nguyễn hoàng Anh</td>
+              <td>11/11/2024 đến 16/11/2024</td>
+              <td>Hoàn thành</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>forgot password</td>
+              <td>đỗ quốc hưng</td>
+              <td>Phan văn phát</td>
+              <td>đỗ quốc hưng</td>
+              <td>11/11/2024 đến 16/11/2024</td>
+              <td>Hoàn thành</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Start desgin -->
+      <div id="design" class="tab-content">
+        <h3>Design</h3>
+        <div class="d-flex" style="flex-direction: row">
+          <div class="d-flex" style="flex-direction: column; margin-right: 20px">
+            <!-- Thêm margin-right để tạo khoảng cách -->
+            <h5 style="text-align: center; padding-bottom: 10px">
+              Login and register
+            </h5>
+            <img src="./login_register_design.jpg" alt="Design Example" style="width: 100%; max-width: 300px" />
+          </div>
+
+          <div class="d-flex" style="flex-direction: column">
+            <h5 style="text-align: center; padding-bottom: 10px">
+              Forgot password
+            </h5>
+            <img src="./forgot_password_design.png" alt="Design Example" style="width: 100%; max-width: 300px" />
+          </div>
+        </div>
+      </div>
+      <!-- End design  -->
+
+      <!-- Start implementation -->
+      <div id="implementation" class="tab-content">
+        <h3>Implementation</h3>
+        <div>
+          <p>HTML implementation of the feature here:</p>
+          <!-- Example HTML content for Implementation -->
+          <div class="feature-preview">
+            <button class="btn-login" id="loginBtn" onclick="showRegisterForm()">
+              Login
+            </button>
+            <a href="https://nagit09.github.io/HCL_2024/" class="xt-decoration-none" style="
+                  border: 2px solid #161616;
+                  padding: 3px 10px;
+                  text-decoration: none;
+                  border-radius: 4px;
+                ">Implementation</a>
+          </div>
+        </div>
+
+        <!-- login -->
+        <div id="overlay" class="overlay">
+          <div class="form-container">
+            <ul class="nav nav-pills nav-justified" id="ex1" role="tablist" style="
+                  background-color: #303030;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 15px;
+                  gap: 10px;
+                ">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link default active" id="tab-login" href="javascript:void(0);"
+                  onclick="toggleForm('login')">Login</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link default active" id="registerTitle" href="javascript:void(0);"
+                  onclick="toggleForm('register')">Register</a>
+              </li>
+            </ul>
+            <div id="loginForm" class="login-form" style="background-color: #303030">
+              <section class="w-100 p-4 d-flex justify-content-center pb-4"
+                style="background-color: #303030; height: 500px">
+                <div style="width: 26rem">
+                  <div class="tab-pane fade active show" id="loginForm" role="tabpanel" aria-labelledby="tab-login"
+                    style="height: 450px">
+                    <form>
+                      <div class="text-center mb-3">
+                        <p>Sign in with:</p>
+                        <button type="button" data-mdb-button-init="" data-mdb-ripple-init=""
+                          class="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
+                          <i class="fab fa-facebook-f"></i>
+                        </button>
+
+                        <button type="button" data-mdb-button-init="" data-mdb-ripple-init=""
+                          class="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
+                          <i class="fab fa-google"></i>
+                        </button>
+
+                        <button type="button" data-mdb-button-init="" data-mdb-ripple-init=""
+                          class="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
+                          <i class="fab fa-twitter"></i>
+                        </button>
+
+                        <button type="button" data-mdb-button-init="" data-mdb-ripple-init=""
+                          class="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
+                          <i class="fab fa-github"></i>
+                        </button>
+                      </div>
+
+                      <p class="text-center">or:</p>
+
+                      <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                        <input type="email" id="loginName" class="form-control" />
+                        <label class="form-label" for="registerName" style="margin-left: 0px">Email</label>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 114.4px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                        <input type="password" id="loginPassword" class="form-control" />
+                        <label class="form-label" for="registerName" style="margin-left: 0px">Password</label>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 64.8px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <div class="row mb-4" style="display: flex; justify-content: space-between">
+                        <div class="col-md-5 d-flex">
+                          <div class="form-check mb-3 mb-md-0">
+                            <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked="" />
+                            <label class="form-check-label" for="loginCheck">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="col-md-5 d-flex">
+                          <a href="#!">Forgot password?</a>
+                        </div>
+                      </div>
+
+                      <button type="submit" data-mdb-button-init="" data-mdb-ripple-init=""
+                        class="btn btn-primary btn-block mb-4 w-100" data-mdb-button-initialized="true">
+                        Sign in
+                      </button>
+
+                      <div class="text-center">
+                        <p>Not a member? <a href="#!">Register</a></p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="register-form" id="register-form">
+              <section class="w-100 p-4 d-flex justify-content-center pb-4 register-form">
+                <div style="width: 26rem">
+                  <div class="tab-pane fade active show" id="registerForm" role="tabpanel"
+                    aria-labelledby="tab-register" style="display: none; background-color: #303030">
+                    <form>
+                      <div class="text-center mb-3">
+                        <p>Sign up with:</p>
+                        <button type="button" data-mdb-button-init="" data-mdb-ripple-init=""
+                          class="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
+                          <i class="fab fa-facebook-f"></i>
+                        </button>
+
+                        <button type="button" data-mdb-button-init="" data-mdb-ripple-init=""
+                          class="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
+                          <i class="fab fa-google"></i>
+                        </button>
+
+                        <button type="button" data-mdb-button-init="" data-mdb-ripple-init=""
+                          class="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
+                          <i class="fab fa-twitter"></i>
+                        </button>
+
+                        <button type="button" data-mdb-button-init="" data-mdb-ripple-init=""
+                          class="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
+                          <i class="fab fa-github"></i>
+                        </button>
+                      </div>
+
+                      <p class="text-center">or:</p>
+                      <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                        <input type="text" id="registerName" class="form-control" />
+                        <label class="form-label active" for="registerName" style="margin-left: 0px">Name</label>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 42.4px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                        <input type="text" id="registerUsername" class="form-control" />
+                        <label class="form-label" for="registerName" style="margin-left: 0px">UserName</label>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 66.4px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                        <input type="email" id="registerEmail" class="form-control" />
+                        <label class="form-label" for="registerName" style="margin-left: 0px">Email</label>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 40px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                        <input type="password" id="registerPassword" class="form-control" />
+                        <label class="form-label" for="registerName" style="margin-left: 0px">Password</label>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 64.8px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                        <input type="password" id="registerRepeatPassword" class="form-control" />
+                        <label class="form-label" for="registerName" style="margin-left: 0px">Repeat password</label>
+
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 106.4px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <div class="form-check d-flex mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked=""
+                          aria-describedby="registerCheckHelpText" />
+                        <label class="form-check-label" for="registerCheck">
+                          I have read and agree to the terms
+                        </label>
+                      </div>
+
+                      <button type="submit" data-mdb-button-init="" data-mdb-ripple-init=""
+                        class="btn btn-primary btn-block w-100 mb-3" data-mdb-button-initialized="true">
+                        Sign up
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End implementation -->
+    </section>
+    <section id="Result" class="section">
+      <div id="ResultGroup">
+        <div class="row">
+          <div class="col">
+            <div class="card text-center">
+              <img
+                src="https://images.unsplash.com/photo-1733690210785-8a48c7895083?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-center">Trần Nhựt Anh</h5>
+                <ul class="list-group list-group-flush border-bottom mb-2">
+                  <li class="list-group-item">Home web project</li>
+                  <li class="list-group-item">Web group</li>
+                  <li class="list-group-item">Phân chia công việc</li>
+                  <li class="list-group-item">Header & footer</li>
+                  <li class="list-group-item">Style guide : Layout </li>
+                </ul>
+                <a href="https://nagit09.github.io/22130015_TranNhutAnh/" class="btn btn-primary ">Xem ngay </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1733690210785-8a48c7895083?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-center">Phan Văn Phát</h5>
+                <ul class="list-group list-group-flush border-bottom mb-2">
+                  <li class="list-group-item"> Xây dựng web nhóm</li>
+                  <li class="list-group-item">Trang Blog</li>
+                  <li class="list-group-item">Chi tiết sản phẩm</li>
+                  <li class="list-group-item">Style guide File & Directory</li>
+                </ul>
+                <a href="blog.html" class="btn btn-primary ">Xem ngay </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1733690210785-8a48c7895083?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-center">Đỗ Văn Minh Tài</h5>
+                <ul class="list-group list-group-flush border-bottom mb-2">
+                  <li class="list-group-item">Xây dựng web nhóm</li>
+                  <li class="list-group-item">Đăng nhập, đăng ký</li>
+                  <li class="list-group-item">Trang Menu Project</li>
+                  <li class="list-group-item">Style guide: Typography</li>
+                </ul>
+                <!-- Nút chuyển hướng -->
+                <a href="result_tai.html" class="btn btn-primary">Xem ngay</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1733690210785-8a48c7895083?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-center">Đỗ Quốc Hưng</h5>
+                <ul class="list-group list-group-flush border-bottom mb-2">
+                  <li class="list-group-item">Xây dựng web nhóm</li>
+                  <li class="list-group-item">Trang About project</li>
+                  <li class="list-group-item">Forgot password project</li>
+                  <li class="list-group-item">Style guide : Image </li>
+                </ul>
+                <a href="result_hung.html" class="btn btn-primary ">Xem ngay </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1733690210785-8a48c7895083?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Nguyễn Hoàng Anh</h5>
+                <ul class="list-group list-group-flush border-bottom mb-2">
+                  <li class="list-group-item">Xây dựng web nhóm</li>
+                  <li class="list-group-item">Xây dựng trang Contact</li>
+                  <li class="list-group-item">Style guide : Color </li>
+                </ul>
+                <a href="result_anh.html" class="btn btn-primary ">Xem ngay </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="StyleGuide" class="section">
+      <div class="container mt-5">
+        <h2 class="fs-1  text-center mb-5">Style guide</h2>
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+          <div class="tab active" data-target="tab1">Layout</div>
+          <div class="tab" data-target="tab2">Typography</div>
+          <div class="tab" data-target="tab3">Color palette</div>
+          <div class="tab" data-target="tab4">Image</div>
+          <div class="tab" data-target="tab5">File và Directory</div>
+
+        </div>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" style="display: block;">
+          <div class="tab-pane active" id="tab1" >
+            <h4>Header (Phần đầu trang):</h4>
+            <ul style="list-style: circle;">
+              <li> Phần trên: Gồm thông tin liên hệ (số điện thoại, email) ở bên trái và các biểu tượng mạng xã hội ở
+                bên phải. Sử dụng flexbox với justify-content-around và align-items-center để căn chỉnh các phần tử.
+              </li>
+              <li>Phần dưới: Gồm logo ở bên trái và các liên kết điều hướng ở giữa. Các liên kết điều hướng được thiết
+                kế dưới dạng danh sách không thứ tự, sử dụng flexbox để căn chỉnh theo chiều ngang.</li>
+            </ul>
+            <h4> Main Layout (Phần chính):</h4>
+            <ul style="list-style: circle;">
+              <li>Introduce Section: mời gọi người dùng sử dụng trang web .</li>
+              <li>Menu Section: Sử dụng layout dạng lưới (grid) với các thẻ menu được sắp xếp theo chiều ngang. Mỗi thẻ
+                menu có hình ảnh bo tròn ở đầu, tiêu đề, mô tả và một nút gọi hành động (CTA - Call to Action).</li>
+              <li>
+                <p>About Section: Bố cục hai cột:</p>
+                <ul style="list-style: circle;">
+                  <li>Cột bên trái: Hiển thị hình ảnh và một thẻ chứa thông tin liên hệ.</li>
+                  <li></li>Cột bên phải: Chứa nội dung văn bản bao gồm tiêu đề, mô tả và một nút bấm.
+                </ul>
+              </li>
+              <li>Type Section: Sử dụng bố cục dạng lưới để hiển thị các thẻ sự kiện, mỗi thẻ bao gồm hình ảnh, tiêu đề và mô tả.</li>
+              <li>Delivery Section: Bố cục dạng lưới để hiển thị nhiều hình ảnh được sắp xếp xen kẽ trái-phải.</li>
+              <li>Blog : sử dụng grid layout để bố trí các bài viết linh động .</li>
+            </ul>
+            <h4>Footer (Phần cuối trang):</h4>
+            <ul style="list-style: circle;">
+              <li>Sử dụng grid layout và flex box để căn giữa và phân chia vị trí các item</li>
+            </ul>
+            <h4>Phong cách và căn chỉnh:</h4>
+            <ul style="list-style: circle;">
+              <li>Sử dụng nhiều Flexbox (d-flex, justify-content-*, align-items-*) để căn chỉnh và sắp xếp các phần tử.</li>
+              <li>Grid Layout được sử dụng cho các phần như sự kiện và giao hàng (delivery).</li>
+              <li>Dùng các lớp như absolute-center để căn chỉnh trung tâm, rounded hoặc rounded-circle để tạo kiểu cho hình ảnh và nút bấm.</li>
+              <li>Kết hợp giữa các tiện ích từ Bootstrap và CSS tùy chỉnh (NavbarAndFooter.css, style.css) để tạo tính linh hoạt và thiết kế đáp ứng (responsive).</li>
+            </ul>
+          </div>
+          <div class="tab-pane" id="tab2">
+            <h4>Typography</h4>
+            <p><strong>1. Font Family:</strong></p>
+            <ul style="list-style: circle;">
+
+              <li>‘Playfair Display', serif được sử dụng cho tiêu đề chính (ví dụ: "Team Members") để tạo cảm giác tinh tế và chuyên nghiệp.</li>
+              <li>'DM Sans', sans-serif được sử dụng cho văn bản thân (ví dụ: tên thành viên, chức vụ và thông tin liên hệ), đảm bảo tính dễ đọc và rõ ràng.</li>
+              <li>Georgia, serif được áp dụng cho toàn bộ trang Contact, mang lại trải nghiệm lịch sự và dễ đọc.</li>
+              <li>Arial, sans-serif được áp dụng cho toàn bộ trang Blog Detail, tăng tính hiện đại và khả năng đọc.</li>
+            </ul>
+            
+            <p><strong>2. Font Size:</strong></p>
+            <ul style="list-style: circle;">
+
+              <li>Tiêu đề chính (H1, H2, H3): Dao động từ 24px đến 60px, tùy thuộc vào mức độ quan trọng của tiêu đề.</li>
+              <li>Tiêu đề phụ (H4, H5, H6): Dao động từ 20px đến 36px, giúp tổ chức nội dung rõ ràng.</li>
+              <li>Văn bản chính: Dao động từ 14px đến 18px.</li>
+              <li>Văn bản nhỏ (Chú thích, metadata): Dao động từ 12px đến 14px.</li>
+            </ul>
+            
+            <p><strong>3. Font Weight:</strong></p>
+            <ul style="list-style: circle;">
+
+              <li>Bình thường (400): Trọng lượng tiêu chuẩn.</li>
+              <li>Đậm (700): Trọng lượng mạnh mẽ.</li>
+              <li>Các giá trị từ 100 đến 900: Điều chỉnh trọng lượng tinh tế (tùy thuộc vào hỗ trợ của phông chữ).</li>
+            </ul>
+          
+            <p><strong>4. Letter Spacing:</strong></p>
+            <ul style="list-style: circle;">
+
+              <li>Đặt khoảng cách chữ là 2px để tạo ra cái nhìn rộng rãi và rõ ràng hơn, đặc biệt là cho tiêu đề hoặc các cụm từ ngắn.</li>
+            </ul>
+          
+            <p><strong>5. Line Height:</strong></p>
+            <ul style="list-style: circle;">
+
+              <li>Văn bản dài hoặc nhỏ: Chiều cao dòng = 1.6 hoặc 24px.</li>
+              <li>Tiêu đề chính: Chiều cao dòng = kích thước phông chữ (ví dụ: 60px, 55px).</li>
+              <li>Tiêu đề trung bình hoặc các dòng văn bản khác: Chiều cao dòng từ 1.4 đến 1.8, tùy thuộc vào phông chữ và không gian hiển thị.</li>
+            </ul>
+          
+            <p><strong>6. Text Color:</strong></p>
+            <ul style="list-style: circle;">
+
+              <li>#333: Chủ yếu dùng cho tiêu đề và văn bản thân, tạo sự rõ ràng và dễ đọc.</li>
+              <li>#777: Dùng cho văn bản phụ, giảm bớt sự nhấn mạnh so với nội dung chính.</li>
+              <li>#fff: Dùng cho nền và văn bản trắng, thường cho thông báo quan trọng hoặc tiêu đề nổi bật.</li>
+              <li>#ad343e: Màu đỏ đậm dùng để làm nổi bật các yếu tố như biểu tượng và tiêu đề.</li>
+              <li>#f9f9f9: Màu nền sáng cho các phần như khối thông tin và lời chứng thực.</li>
+              <li>#007bff và #0056b3: Các sắc thái màu xanh được dùng cho nút, với màu thay đổi khi hover để tăng cường tương tác.</li>
+            </ul>
+          
+            <p><strong>7. Line Length:</strong></p>
+            <ul style="list-style: circle;">
+
+              <li>Để đảm bảo khả năng đọc tối ưu, chiều dài dòng tối đa nên dao động từ 75 đến 85 ký tự.</li>
+            </ul>
+          
+            <p><strong>8. Text Alignment:</strong></p>
+            <ul style="list-style: circle;">
+
+              <li>Canh trái hầu hết các văn bản và canh giữa các tiêu đề khi cần thiết.</li>
+            </ul>
+          
+            <p><strong>9. Interactive Typography:</strong></p>
+            <ul style="list-style: circle;">
+
+              <li>Liên kết, nút và các yếu tố khác thay đổi hình thức khi người dùng hover. Ví dụ, nút có thể thay đổi màu nền, văn bản có thể thay đổi trọng lượng, và hình ảnh có thể thay đổi kích thước.</li>
+              <li>Các hiệu ứng hover mặc định như thay đổi màu sắc (ví dụ: từ #5AB9EA sang #00bfff), cùng với các hiệu ứng khác như biến đổi, đổ bóng hoặc thay đổi kích thước, giúp nâng cao trải nghiệm người dùng và làm giao diện thêm sinh động.</li>
+            </ul>
+          
+            <p><strong>10. Responsive Typography:</strong></p>
+            <ul style="list-style: circle;">
+
+              <li>Đảm bảo rằng tất cả văn bản được điều chỉnh theo kích thước màn hình bằng cách sử dụng media queries cho các kích thước phông chữ phù hợp với các thiết bị khác nhau.</li>
+            </ul>
+          </div>
+          
+          <div class="tab-pane" id="tab3">
+            <h4>Màu cơ bản:</h4>
+            <ul style="list-style: circle;">
+              <li> Đen: #000000</li>
+              <li> Xám đậm: #343A40</li>
+              <li> Trắng: #FFFFFF</li>
+            </ul>
+            
+            <h4> Màu phụ:</h4>
+            <ul style="list-style: circle;">
+              <li> Xám nhạt: #F8F9FA</li>
+              <li> Xanh lam: #007BFF</li>
+              </ul>
+            
+            <h4>Màu nhấn:</h4>
+            <ul style="list-style: circle;">
+              <li> Đỏ: #DC3545</li> 
+              <li> Xanh lá cây: #28A745</li>
+            </ul>
+            
+            <h4>Màu trung tính:</h4>
+            <ul style="list-style: circle;">
+              <li> Xám: #6C757D</li>
+              <li> Xám nhạt: #E9ECEF</li>
+            </ul>
+            
+            <h4>Sử dụng màu sắc:</h4>
+            <ul style="list-style: circle;">
+              <strong> Màu chữ và nền:</strong>
+              <li> Chữ chính: Đen (#000000) trên nền trắng (#FFFFFF).</li>
+              <li> Chữ phụ: Xám đậm (#343A40) trên nền xám nhạt (#F8F9FA).</li>
+              <strong> Nút và liên kết:</strong>
+              <li> Nút chính: Nền xanh lam (#007BFF) với chữ trắng (#FFFFFF).</li>
+              <li> Nút phụ: Nền xám đậm (#343A40) với chữ trắng (#FFFFFF).</li>
+              <strong> Viền và đường kẻ:</strong>               
+              <li> Dùng xám (#6C757D) cho viền và đường kẻ.</li>
+              <strong> Nhấn mạnh và làm nổi bật:</strong>
+              <li> Dùng xanh lá cây (#28A745) cho thông điệp thành công và điểm nhấn.</li>
+              <li> Dùng đỏ (#DC3545) cho thông điệp lỗi và cảnh báo.</li>
+            </ul>
+    
+              <h4>Màu chữ:</h4>
+            <ul style="list-style: circle;">
+              <li> #333: Chủ yếu dùng cho tiêu đề và văn bản chính, tạo sự rõ ràng và dễ đọc.</li>
+              <li> #777: Dùng cho văn bản phụ, giảm bớt sự chú ý so với nội dung chính.</li>
+              <li> #fff: Dùng cho nền và chữ trắng, thường cho thông báo quan trọng hoặc tiêu đề nổi bật.</li>
+              <li> ##ad343e: Màu đỏ đậm dùng để làm nổi bật các yếu tố như biểu tượng và tiêu đề.</li>
+              <li> #f9f9f9: Màu nền nhạt cho các phần như khối thông tin và lời chứng thực.</li>
+              <li> #007bff và #0056b3: Các tông màu xanh lam dùng cho nút, với màu sắc khi di chuột để tăng tính tương tác.</li>
+            </ul>
+          </div>
+          <div class="tab-pane" id="tab4">
+              <h4 class="my-4">1.Group Web</h4>
+                <div class="image-container mb-4">
+                  <img src="https://placehold.co/320x214/EEE/31343C?font=montserrat&text=Avt%20result\n(320x214%20px)" alt="">
+                </div>
+                <div class="image-container mb-4">
+                  <img src="https://placehold.co/300x400/EEE/31343C?font=montserrat&text=Img%20design\n(300x400%20px)" alt="">
+                </div>
+              <h4 class="my-4">2.Project Web</h4>
+
+                <div class="image-container mb-4">
+                  <img src="https://placehold.co/281x55/EEE/31343C?font=montserrat&text=Logo%20Project\n(281x55%20px)" alt="">
+                </div>
+            <div class="image-container mb-4">
+              <img src="https://placehold.co/272x300/EEE/31343C?font=montserrat&text=Img%20Services\n(272x300%20px)" alt="">
+            </div>
+            <div class="image-container mb-4">
+              <img src="https://placehold.co/50x66/EEE/31343C?font=montserrat&text=Icon%20about\n(50x66%20px)" alt="">
+            </div>
+                <div class="image-container mb-4">
+                  <img src="https://placehold.co/180x150/EEE/31343C?font=montserrat&text=Avt%20about\n(180x150%20px)" alt="">
+                </div>
+                <div class="image-container mb-4">
+                  <img src="https://placehold.co/194x170/EEE/31343C?font=montserrat&text=Img%20footer\n(194x170%20px)" alt="">
+                </div>
+
+                <div class="image-container mb-4">
+                  <img src="https://placehold.co/286x215/EEE/31343C?font=montserrat&text=Img%20product%20menu\n(286x215%20px)" alt="">
+                </div>
+                <div class="image-container mb-4">
+                  <img src="https://placehold.co/283x200/EEE/31343C?font=montserrat&text=Img%20product%20blog\n(283x200%20px)" alt="">
+                </div>
+
+          </div>
+          <div class="tab-pane" id="tab5">
+            <h4>Style Guide: Cấu Trúc File và Directory Cho Project Web</h4>
+            <ol>
+                <li>
+                    <strong>Cấu trúc tổng quan</strong>
+                    <p>Cấu trúc thư mục nên được tổ chức gọn gàng và phân tách theo chức năng để dễ quản lý và mở rộng. Dưới đây là ví dụ cấu trúc thư mục chuẩn cho một project web:</p>
+                    <pre><code>project/
+├── css/                      # Thư mục chứa tất cả các file CSS
+│   ├── about.css             # Style cho trang About
+│   ├── blog.css              # Style cho trang danh sách Blog
+│   ├── blogDetail.css        # Style cho trang chi tiết Blog
+│   ├── contact.css           # Style cho trang Contact
+│   ├── NavbarAndFooter.css   # Style cho Navbar và Footer (dùng chung)
+│   ├── reset.css             # Reset hoặc Normalize CSS
+│   ├── style.css             # Style tổng quan cho toàn bộ website
+├── image/                    # Thư mục chứa tất cả hình ảnh
+│   ├── logo.png              # Logo của website
+│   ├── background.jpg        # Hình nền chung của website
+│   ├── blog/                 # Hình ảnh liên quan đến blog
+│       ├── blog1.jpg
+│       ├── blog2.jpg
+├── js/                       # Thư mục chứa tất cả các file JavaScript
+│   ├── main.js               # Code JS chính (chức năng toàn trang)
+│   ├── navbar.js             # Code JS cho Navbar
+│   ├── validation.js         # Code kiểm tra form (liên hệ, đăng ký, ...)
+├── about.html                # Trang About (Giới thiệu)
+├── blog.html                 # Trang danh sách Blog
+├── blogDetail.html           # Trang chi tiết Blog
+├── contact.html              # Trang Contact (Liên hệ)
+├── index.html                # Trang chủ
+├── menu.html                 # Trang Menu
+├── README.md                 # File tài liệu hướng dẫn sử dụng project</code></pre>
+                </li>
+                <li>
+                    <strong>Quy tắc đặt tên</strong>
+                    <ol>
+                        <li>
+                            <strong>Thư mục</strong>
+                            <ul>
+                                <li>Sử dụng tiếng Anh để đảm bảo phù hợp với chuẩn quốc tế.</li>
+                                <li>Không dấu, không khoảng trắng. Dùng dấu gạch ngang (-) để phân cách từ nếu cần.</li>
+                                <li>Ví dụ: <code>image/</code>, <code>css/</code>, <code>js/</code></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>File</strong>
+                            <ul>
+                                <li>Tên file phải phản ánh rõ ràng nội dung của nó. Ví dụ: <code>about.html</code>, <code>blog.css</code>.</li>
+                                <li>Tách từ bằng dấu gạch ngang (-). Ví dụ: <code>blog-detail.html</code>, <code>reset.css</code>.</li>
+                                <li>Sử dụng chữ thường.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Chức năng các thư mục</strong>
+                    <ol>
+                        <li>
+                            <strong>Thư mục css/</strong>
+                            <ul>
+                                <li>Chứa tất cả các file CSS của project.</li>
+                                <li>File chung:
+                                    <ul>
+                                        <li><code>reset.css</code>: Reset hoặc normalize các style mặc định của trình duyệt.</li>
+                                        <li><code>style.css</code>: Style tổng quan, các định nghĩa màu sắc, typography chung.</li>
+                                        <li><code>NavbarAndFooter.css</code>: Style dùng chung cho Navbar và Footer.</li>
+                                    </ul>
+                                </li>
+                                <li>File riêng từng trang:
+                                    <ul>
+                                        <li><code>about.css</code>: Style cho trang About.</li>
+                                        <li><code>contact.css</code>: Style cho trang Contact.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Thư mục image/</strong>
+                            <ul>
+                                <li>Lưu trữ tất cả hình ảnh sử dụng trong project:</li>
+                                <li>Logo và hình nền chung:
+                                    <ul>
+                                        <li><code>logo.png</code>: Logo chính của website.</li>
+                                        <li><code>background.jpg</code>: Hình nền chung cho website.</li>
+                                    </ul>
+                                </li>
+                                <li>Hình ảnh chuyên biệt:
+                                    <ul>
+                                        <li><code>blog/</code>: Lưu trữ hình ảnh liên quan đến blog.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Thư mục js/</strong>
+                            <ul>
+                                <li>Chứa các file JavaScript được tách theo chức năng:</li>
+                                <li><code>main.js</code>: Chứa các chức năng chính của website (ví dụ: hiệu ứng scroll, xử lý sự kiện toàn trang).</li>
+                                <li><code>navbar.js</code>: Code điều hướng hoặc các sự kiện liên quan đến Navbar.</li>
+                                <li><code>validation.js</code>: Code kiểm tra form cho các trang như Contact hoặc Đăng ký.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Các file HTML</strong>
+                            <ul>
+                                <li>Trang chủ: <code>index.html</code>.</li>
+                                <li>Trang giới thiệu: <code>about.html</code>.</li>
+                                <li>Trang blog:
+                                    <ul>
+                                        <li><code>blog.html</code>: Hiển thị danh sách các bài blog.</li>
+                                        <li><code>blogDetail.html</code>: Hiển thị nội dung chi tiết của một bài blog.</li>
+                                    </ul>
+                                </li>
+                                <li>Trang liên hệ: <code>contact.html</code>.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Project -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
